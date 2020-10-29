@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/57413d3ef0.js" crossorigin="anonymous"></script>
+    <title>Planer tygodniowy</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Wybierz zadanie</h1>
+
+        <div class="task__container">
+            <div class="task__name" id="break" style="background-color: #BC91FA;">Przerwa</div>
+            <div class="task__name" id="gym" style="background-color: #BCFA91;">Siłownia</div>
+            <div class="task__name" id="study" style="background-color: #FB868F;">Nauka</div>
+            <div class="task__name" id="tv" style="background-color: #4BAD9A;">Rozrywka</div>
+            <div class="task__name" id="friends" style="background-color: #FABB6B;">Spotkania</div>
+            <div class="task__name" id="work" style="background-color: #78FAE0;">Praca</div>
+            <div class="task__name" id="deselect" style="background-color: rgb(240, 16, 72);">Odznacz zaznaczone</div>
+        </div>
+        <h3>Dodaj wybrane elementy do planu</h3>
+
+        <div class="shelude__container">
+            <div class="days__container">
+                <span class="corner"></span>
+                <div class="day">Poniedziałek</div>
+                <div class="day">Wtorek</div>
+                <div class="day">Środa</div>
+                <div class="day">Czwartek</div>
+                <div class="day">Piątek</div>
+                <div class="day">Sobota</div>
+                <div class="day">Niedziela</div>
+            </div>
+            <div class="part__day">
+                <span class="time">8:00 <br>- <br> 12:00</span>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+            </div>
+
+            <div class="part__day">
+                <span class="time">12:00 <br>- <br> 14:00</span>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+            </div>
+
+            <div class="part__day">
+                <span class="time">14:00 <br>- <br> 18:00</span>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+            </div>
+
+            <div class="part__day">
+                <span class="time">18:00 <br>- <br> 21:00</span>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+            </div>
+
+            <div class="part__day">
+                <span class="time">21:00 <br>- <br> 23:00</span>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+            </div>
+        </div>
+        <div class="deleteBtn">Zresetuj plan</div>
+
+        <div class="pop-up__container">
+            <div class="pop-up">
+                <h4>Czy na pewno chcesz usunąć wszystkie zadania?</h4>
+                <div class="btn__container">
+                    <div class="btn__answer" id="btn__yes">TAK</div>
+                    <div class="btn__answer" id="btn__no">NIE</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/main.js"></script>
+</body>
+
+</html>

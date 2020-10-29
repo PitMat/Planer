@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(238, 174, 174);
+    background: linear-gradient(280deg, rgba(238, 174, 174, 1) 51%, rgba(148, 154, 233, 1) 73%);
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h3 {
+    margin-bottom: 20px;
+    color: #bd08ff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+.task__container {
+    display: flex;
+    margin-bottom: 3rem;
+    pad: 10px;
+}
+
+.task__container {
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task__name {
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task__name.selected {
+    box-shadow: 0px 0px 0px 2px rgb(150, 11, 220) inset;
+
+}
+
+#deselect {
+
+    color: white;
+}
+
+/* Wyglad tabeli */
+
+.shelude__container {
+    background: linear-gradient(#89e7e1, #e295e2b6);
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 25px;
+    box-shadow: 40px 300px 600px #89e7e1,
+        -20px -20px 600px #e295e2b6;
+}
+
+.days__container {
+    display: flex;
+
+
+
+
+}
+
+.corner {
+    width: 50px;
+    height: 70px;
+    margin: 2px;
+}
+
+.day {
+    width: 100px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    border-radius: 24px;
+    background: #89e7e1;
+    box-shadow: -5px 5px 10px #64a9a4,
+        5px -5px 10px #aeffff;
+}
+
+.part__day {
+    display: flex;
+}
+
+.time {
+    width: 50px;
+    height: 70px;
+    border-radius: 24px;
+    background: linear-gradient(45deg, #b97ad0, #dc92f7);
+    box-shadow: 5px -5px 10px #9663a9,
+        -5px 5px 10px #ffadff;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+
+
+}
+
+.task {
+    background-color: white;
+    height: 70px;
+    width: 100px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+/* Resetowanie */
+
+.deleteBtn {
+    padding: 10px 25px;
+    margin-top: 20px;
+    color: #bd08ff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    border-radius: 29px;
+    background: #89edee;
+    box-shadow: 7px 7px 16px #375f5f,
+        -7px -7px 16px #dbffff;
+
+}
+
+.deleteBtn:hover {
+    background: #71f1f3;
+}
+
+/* PopUp */
+
+.pop-up__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up {
+    width: 300px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(238, 174, 174);
+    background: linear-gradient(280deg, rgba(238, 174, 174, 1) 51%, rgba(148, 154, 233, 1) 73%);
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.btn__answer {
+    margin: 0 20px;
+    background-color: #71f1f3;
+    padding: 10px;
+    border-radius: 5px;
+    color: #bd08ff;
+    cursor: pointer;
+}
